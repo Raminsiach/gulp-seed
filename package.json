@@ -1,0 +1,23 @@
+{
+  "name": "gulp-seed",
+  "version": "1.0.0",
+  "description": "A gulp seed for browser autorefresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raminsiach/gulp-seed.git"
+  },
+  "author": "Ramsich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raminsiach/gulp-seed/issues"
+  },
+  "homepage": "https://github.com/Raminsiach/gulp-seed#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0"
+  }
+}

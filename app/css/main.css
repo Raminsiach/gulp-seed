@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.editor-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	height: 100vh;
+}
+.jabe {
+	flex-grow: 1;
+	flex-shrink: 0;
+	background-color: #ddd;
+}
+.editors {
+	display: flex;
+	height: 300px;
+	flex-grow: 0;
+}
+.devider {
+	height: 3px;
+	flex-grow: 0;
+	background-color: #333;
+}
+.output {
+	background-color: #f2f2f2;
+}
+.ed {
+	background-color: #999;
+	flex-basis: 200px;
+	flex-grow: 1;
+	margin: 1px;
+	height: 300px;
+}

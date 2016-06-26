@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+}
+.logo {
+	position: absolute;
+	background-color: #ddd;
+	left: 50%;
+	transform: translateX(-%);
+	z-index: 9999999;
+	animation-duration: 1.9s;
+	animation-timing-function: ease-out;
+	visibility: hidden;
+}
+.logo.animate {
+	animation-delay: 0.5s;
+	animation-name: logo;
+}
+.transitioner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	width: 100%;
+	height: 100vh;
+	background-color: #dedede;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bazier(0,.97,1,.02);
+	visibility: hidden;
+}
+.transitioner.animate {
+	animation-name: transition;
+}
+
+@keyframes transition {
+	0% {
+		visibility: visible;
+		transform: translateY(100vh);
+	}
+	45% {
+		transform: translateY(0vh);
+	}
+	60% {
+		transform: translateY(0vh);
+	}
+	100% {
+		transform: translateY(-100vh);
+		visibility: hidden;
+	}
+}
+@keyframes logo {
+	0% {
+		visibility: visible;
+		transform: translateY(100vh);
+	}
+	30% {
+		transform: translateY(50vh);
+	}
+	100% {
+		transform: translateY(-100vh);
+		visibility: hidden;
+	}
+}

@@ -9,7 +9,6 @@ gulp.task('browserSync', function() {
         notify: false
     });
 });
-
 gulp.task('watch', ['browserSync'], function() {
     gulp.watch('app/index.html', browserSync.reload);
     gulp.watch('app/css/*.css', browserSync.reload);
